@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    image: mazzolino/text-highlighter
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - 8233:80/tcp
